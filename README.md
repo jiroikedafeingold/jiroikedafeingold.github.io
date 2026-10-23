@@ -9,6 +9,8 @@ repos (served under `/<repo>/`) cannot do.
 | Path | Purpose |
 |---|---|
 | `.well-known/assetlinks.json` | Android **Digital Asset Links** — lets Android verify that this domain and the Star Battle Nova Android app belong to the same owner, so `https://jiroikedafeingold.github.io/StarBattle/s.html?b=…` share links open the app directly instead of showing an "open with" chooser. |
+| `.well-known/apple-app-site-association` | iOS **universal links** — tells iOS that `/squirm/card/*` links open in Squirm (`TJ8LYQ4D36.com.jirofeingold.Squirm`). |
+| `squirm/` | Squirm share pages: one per official card (`squirm/card/<id>.html` + a `.png` link preview), plus a landing page. **Generated** by `tools/generate_share_pages.py` in the Squirm repo — re-run that rather than editing by hand. |
 | `.nojekyll` | Stops GitHub Pages running Jekyll, which would otherwise **silently drop `.well-known/`** (Jekyll ignores dot-directories). Without this file the assetlinks URL 404s. |
 | `index.html` | A minimal landing page so the bare domain isn't blank. |
 

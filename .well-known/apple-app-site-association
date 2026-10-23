@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "TJ8LYQ4D36.com.jirofeingold.Squirm"
+        ],
+        "components": [
+          {
+            "/": "/squirm/card/*",
+            "comment": "Shared Squirm cards"
+          }
+        ]
+      }
+    ]
+  }
+}
